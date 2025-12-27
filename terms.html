@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syarat & Ketentuan - HENDRA CIA</title>
+    <meta name="description" content="Syarat & Ketentuan HENDRA CIA - Creative Accommodation & Advertising Solutions">
+    <meta name="keywords" content="syarat ketentuan, HENDRA CIA, akomodasi, perjanjian, creative solutions">
+    <meta name="author" content="HENDRA CIA">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --neon-blue: #00d4ff;
+            --neon-purple: #7c3aed;
+            --neon-pink: #ec4899;
+            --dark-bg: #0f0f23;
+            --light-bg: #1a1a2e;
+            --accent-gold: #fbbf24;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-primary);
+            background: var(--dark-bg);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        .brand-font {
+            font-family: 'Bebas Neue', cursive;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--light-bg) 0%, var(--dark-bg) 50%, #16213e 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple), var(--neon-pink), var(--accent-gold));
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientText 3s ease infinite;
+        }
+        
+        @keyframes gradientText {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .nav-sticky {
+            backdrop-filter: blur(20px);
+            background: rgba(15, 15, 35, 0.95);
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+            color: white;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--neon-purple), var(--neon-pink));
+            transition: left 0.5s ease;
+            z-index: -1;
+        }
+        
+        .btn-primary:hover::before {
+            left: 0;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 212, 255, 0.4);
+        }
+        
+        .content-card {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(0, 212, 255, 0.1));
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .content-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(0, 212, 255, 0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+            opacity: 0;
+        }
+        
+        .content-card:hover::before {
+            opacity: 1;
+            animation: shimmer 1s ease-in-out;
+        }
+        
+        .content-card:hover {
+            border-color: var(--neon-blue);
+            transform: translateY(-5px);
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(251, 191, 36, 0.2));
+            border: 1px solid var(--accent-gold);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 16px 0;
+            position: relative;
+        }
+        
+        .warning-box::before {
+            content: '⚠️';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: var(--dark-bg);
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 212, 255, 0.2));
+            border: 1px solid var(--neon-blue);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 16px 0;
+            position: relative;
+        }
+        
+        .info-box::before {
+            content: 'ℹ️';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: var(--dark-bg);
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .section-number {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body class="gradient-bg">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 nav-sticky">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-br from-neon-blue to-neon-purple rounded-xl flex items-center justify-center">
+                        <span class="brand-font text-white text-xl">HC</span>
+                    </div>
+                    <div>
+                        <h1 class="brand-font text-2xl font-bold text-gradient">HENDRA CIA</h1>
+                        <p class="text-xs text-secondary uppercase tracking-widest">Creative Solutions</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-neon-blue transition duration-300">Beranda</a>
+                    <a href="index.html#services" class="text-gray-300 hover:text-neon-blue transition duration-300">Layanan</a>
+                    <a href="index.html#creative" class="text-gray-300 hover:text-neon-blue transition duration-300">Kreatif</a>
+                    <a href="index.html#about" class="text-gray-300 hover:text-neon-blue transition duration-300">Tentang</a>
+                    <a href="index.html#contact" class="text-gray-300 hover:text-neon-blue transition duration-300">Kontak</a>
+                    <a href="privacy.html" class="text-gray-300 hover:text-neon-blue transition duration-300">Kebijakan Privasi</a>
+                    <span class="text-neon-blue font-semibold">Syarat & Ketentuan</span>
+                </div>
+                
+                <button class="md:hidden" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-dark-bg border-t border-gray-800">
+            <div class="container mx-auto px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-gray-300 hover:text-neon-blue transition">Beranda</a>
+                <a href="index.html#services" class="block text-gray-300 hover:text-neon-blue transition">Layanan</a>
+                <a href="index.html#creative" class="block text-gray-300 hover:text-neon-blue transition">Kreatif</a>
+                <a href="index.html#about" class="block text-gray-300 hover:text-neon-blue transition">Tentang</a>
+                <a href="index.html#contact" class="block text-gray-300 hover:text-neon-blue transition">Kontak</a>
+                <a href="privacy.html" class="block text-gray-300 hover:text-neon-blue transition">Kebijakan Privasi</a>
+                <span class="block text-neon-blue font-semibold">Syarat & Ketentuan</span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-purple-900/20 to-pink-900/20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="heading-font text-5xl md:text-6xl font-bold mb-6">
+                    Syarat & <span class="text-gradient">Ketentuan</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    Syarat dan ketentuan ini mengatur penggunaan layanan <span class="text-gradient font-bold">HENDRA CIA</span>. 
+                    Dengan menggunakan layanan kami, Anda menyetujui semua ketentuan yang tercantum di bawah ini.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="index.html#contact" class="btn-primary text-center">Hubungi Kami</a>
+                    <a href="privacy.html" class="bg-gray-700 text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-600 transition text-center">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Content Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                
+                <!-- Pendahuluan -->
+                <div class="content-card">
+                    <div class="section-number">01</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Pendahuluan</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Selamat datang di <span class="text-gradient font-bold">HENDRA CIA</span>. Syarat dan Ketentuan ini ("Ketentuan") mengatur penggunaan layanan penyediaan akomodasi lainnya yang disediakan oleh HENDRA CIA ("Kami," "Perusahaan").
+                    </p>
+                    <div class="warning-box">
+                        <p class="text-gray-300">
+                            <strong>PENTING:</strong> Harap baca Ketentuan ini dengan cermat sebelum menggunakan layanan kami. 
+                            Dengan mengakses atau menggunakan layanan HENDRA CIA, Anda menyatakan telah membaca, memahami, dan menyetujui untuk terikat oleh Ketentuan ini.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Definisi -->
+                <div class="content-card">
+                    <div class="section-number">02</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Definisi</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Dalam Ketentuan ini, istilah-istilah berikut memiliki makna sebagai berikut:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li><strong>"🏨 Akomodasi":</strong> Fasilitas penginapan, homestay, apartemen servis, atau tempat tinggal sementara lainnya yang disediakan oleh HENDRA CIA</li>
+                        <li><strong>"👤 Pengguna":</strong> Individu atau entitas yang menggunakan layanan HENDRA CIA</li>
+                        <li><strong>"🧳 Tamu":</strong> Orang yang akan menempati akomodasi yang dipesan</li>
+                        <li><strong>"📋 Pemesanan":</strong> Proses reservasi akomodasi melalui platform HENDRA CIA</li>
+                        <li><strong>"🌐 Platform":</strong> Website, aplikasi mobile, atau saluran pemesanan lainnya yang disediakan HENDRA CIA</li>
+                        <li><strong>"💰 Tarif":</strong> Biaya yang harus dibayar untuk menggunakan akomodasi</li>
+                        <li><strong>"🎨 Layanan Kreatif":</strong> Layanan periklanan, branding, dan creative solutions yang ditawarkan HENDRA CIA</li>
+                    </ul>
+                </div>
+                
+                <!-- Layanan -->
+                <div class="content-card">
+                    <div class="section-number">03</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Layanan yang Disediakan</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        HENDRA CIA menyediakan layanan penyediaan akomodasi lainnya meliputi:
+                    </p>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">🏨 Jenis Akomodasi</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4 mb-6">
+                        <li>Akomodasi Premium (hotel berbintang, villa mewah)</li>
+                        <li>Homestay Nyaman (rumah tinggal dengan fasilitas lengkap)</li>
+                        <li>Apartemen Servis (unit apartemen dengan layanan penuh)</li>
+                        <li>Layanan custom akomodasi sesuai permintaan khusus</li>
+                        <li>Creative spaces untuk events dan photoshoots</li>
+                    </ul>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">🎯 Fasilitas Tambahan</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4 mb-6">
+                        <li>Layanan antar jemput bandara/stasiun</li>
+                        <li>Tour dan paket wisata</li>
+                        <li>Sewa kendaraan</li>
+                        <li>Catering dan layanan makanan</li>
+                        <li>Laundry dan housekeeping</li>
+                        <li>Event planning dan management</li>
+                    </ul>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">🎨 Layanan Kreatif</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li>Brand strategy dan development</li>
+                        <li>Digital marketing campaigns</li>
+                        <li>Content creation dan photography</li>
+                        <li>Website development dan design</li>
+                        <li>Social media management</li>
+                    </ul>
+                </div>
+                
+                <!-- Pendaftaran dan Akun -->
+                <div class="content-card">
+                    <div class="section-number">04</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Pendaftaran dan Akun Pengguna</h2>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">📝 Persyaratan Pendaftaran</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Untuk menggunakan layanan kami, Anda harus:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4 mb-6">
+                        <li>Berusia minimal 18 tahun atau memiliki persetujuan orang tua/wali</li>
+                        <li>Memberikan informasi pribadi yang akurat dan lengkap</li>
+                        <li>Memiliki alamat email dan nomor telepon yang valid</li>
+                        <li>Mematuhi semua peraturan yang berlaku di Indonesia</li>
+                        <li>Memiliki kemampuan hukum untuk membuat perjanjian</li>
+                    </ul>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">🔐 Keamanan Akun</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Anda bertanggung jawab untuk menjaga kerahasiaan kredensial akun Anda. 
+                        HENDRA CIA tidak bertanggung jawab atas penggunaan akun yang tidak sah atau penyalahgunaan oleh pihak ketiga.
+                    </p>
+                    <div class="info-box">
+                        <p class="text-gray-300">
+                            <strong>INFO:</strong> Laporkan segera jika Anda mencurigai adanya penggunaan akun yang tidak sah.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Pemesanan -->
+                <div class="content-card">
+                    <div class="section-number">05</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Proses Pemesanan</h2>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">📱 Cara Pemesanan</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Pemesanan dapat dilakukan melalui:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4 mb-6">
+                        <li>Website resmi HENDRA CIA</li>
+                        <li>Aplikasi mobile HENDRA CIA</li>
+                        <li>Telepon ke customer service</li>
+                        <li>WhatsApp business</li>
+                        <li>Email ke alamat resmi</li>
+                        <li>Langsung di lokasi (walk-in)</li>
+                    </ul>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">📧 Konfirmasi Pemesanan</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Setelah pemesanan berhasil, Anda akan menerima:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li>Nomor konfirmasi pemesanan unik</li>
+                        <li>Detail lengkap akomodasi dan tanggal menginap</li>
+                        <li>Rincian biaya dan pembayaran</li>
+                        <li>Syarat dan ketentuan khusus properti</li>
+                        <li>Contact person untuk keperluan darurat</li>
+                    </ul>
+                </div>
+                
+                <!-- Pembayaran -->
+                <div class="content-card">
+                    <div class="section-number">06</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Pembayaran</h2>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">💳 Metode Pembayaran</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Kami menerima berbagai metode pembayaran:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4 mb-6">
+                        <li>Transfer bank (BCA, Mandiri, BNI, BRI)</li>
+                        <li>Kartu kredit/debit (Visa, Mastercard)</li>
+                        <li>E-wallet (GoPay, OVO, DANA, LinkAja)</li>
+                        <li>Virtual account</li>
+                        <li>Cash di lokasi (terbatas)</li>
+                        <li>Cryptocurrency (Bitcoin, Ethereum)</li>
+                    </ul>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">💰 Kebijakan Pembayaran</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li><strong>Uang muka:</strong> Minimal 30% dari total biaya untuk pemesanan regular</li>
+                        <li><strong>Pelunasan:</strong> Harus dilakukan H-1 sebelum tanggal check-in</li>
+                        <li><strong>High season:</strong> Uang muka 50% berlaku untuk periode tertentu</li>
+                        <li><strong>Promosi:</strong> Syarat pembayaran dapat berbeda untuk promo khusus</li>
+                        <li><strong>Layanan kreatif:</strong> DP 50% untuk memulai proyek</li>
+                    </ul>
+                </div>
+                
+                <!-- Pembatalan dan Pengembalian -->
+                <div class="content-card">
+                    <div class="section-number">07</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Pembatalan dan Pengembalian</h2>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">❌ Kebijakan Pembatalan</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4 mb-6">
+                        <li><strong>H-30 atau lebih:</strong> Pengembalian penuh (100%)</li>
+                        <li><strong>H-14 sampai H-29:</strong> Pengembalian 50%</li>
+                        <li><strong>H-7 sampai H-13:</strong> Pengembalian 25%</li>
+                        <li><strong>Kurang dari H-7:</strong> Tidak ada pengembalian</li>
+                        <li><strong>No-show:</strong> Dikenakan biaya penuh</li>
+                    </ul>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">🔄 Reschedule</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Perubahan tanggal dapat dilakukan maksimal H-7 dengan biaya administrasi sebesar 10% dari total biaya.
+                    </p>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">⚠️ Force Majeure</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        HENDRA CIA tidak bertanggung jawab atas pembatalan yang disebabkan oleh kejadian di luar kendali kami 
+                        (bencana alam, pandemi, perang, dll). Dalam kasus tersebut, kami akan menawarkan reschedule atau voucher.
+                    </p>
+                </div>
+                
+                <!-- Hak dan Kewajiban -->
+                <div class="content-card">
+                    <div class="section-number">08</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Hak dan Kewajiban</h2>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">👤 Hak dan Kewajiban Pengguna</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Sebagai Pengguna, Anda memiliki hak dan kewajiban:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4 mb-6">
+                        <li><strong>Hak:</strong> Mendapatkan layanan sesuai dengan yang dipesan</li>
+                        <li><strong>Hak:</strong> Mendapatkan informasi yang akurat tentang properti</li>
+                        <li><strong>Hak:</strong> Mengajukan keluhan dan mendapatkan resolusi</li>
+                        <li><strong>Kewajiban:</strong> Mematuhi peraturan properti</li>
+                        <li><strong>Kewajiban:</strong> Menjaga kebersihan dan ketertiban</li>
+                        <li><strong>Kewajiban:</strong> Melunasi pembayaran tepat waktu</li>
+                    </ul>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">🏢 Hak dan Kewajiban HENDRA CIA</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li><strong>Hak:</strong> Menerima pembayaran sesuai tarif yang berlaku</li>
+                        <li><strong>Hak:</strong> Menolak pengguna yang melanggar peraturan</li>
+                        <li><strong>Hak:</strong> Mengubah tarif dengan pemberitahuan sebelumnya</li>
+                        <li><strong>Kewajiban:</strong> Menyediakan layanan sesuai standar</li>
+                        <li><strong>Kewajiban:</strong> Menjaga keamanan dan kenyamanan tamu</li>
+                        <li><strong>Kewajiban:</strong> Memberikan bantuan dalam situasi darurat</li>
+                    </ul>
+                </div>
+                
+                <!-- Privasi dan Data -->
+                <div class="content-card">
+                    <div class="section-number">09</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Privasi dan Data Pribadi</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Penggunaan data pribadi Anda diatur oleh Kebijakan Privasi kami yang dapat diakses di 
+                        <a href="privacy.html" class="text-neon-blue hover:underline">privacy.html</a>. 
+                        Dengan menggunakan layanan kami, Anda menyetujui pengumpulan dan penggunaan data sesuai kebijakan tersebut.
+                    </p>
+                    <div class="warning-box">
+                        <p class="text-gray-300">
+                            <strong>PENTING:</strong> Data pribadi Anda dilindungi secara ketif dan tidak akan dibagikan kepada pihak ketiga tanpa persetujuan Anda, kecuali diwajibkan oleh hukum.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Kekayaan Intelektual -->
+                <div class="content-card">
+                    <div class="section-number">10</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Kekayaan Intelektual</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Semua konten, desain, logo, dan materi lainnya di platform HENDRA CIA dilindungi oleh hukum kekayaan intelektual.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li>Logo HENDRA CIA adalah merek dagang terdaftar</li>
+                        <li>Konten website dilindungi hak cipta</li>
+                        <li>Foto dan materi promosi adalah milik HENDRA CIA</li>
+                        <li>Layanan kreatif yang dihasilkan adalah milik klien setelah pembayaran penuh</li>
+                    </ul>
+                </div>
+                
+                <!-- Force Majeure -->
+                <div class="content-card">
+                    <div class="section-number">11</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Force Majeure</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        HENDRA CIA tidak bertanggung jawab atas kegagalan atau keterlambatan dalam melaksanakan kewajiban 
+                        jika disebabkan oleh kejadian di luar kendali yang wajar (force majeure), termasuk:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li>Bencana alam (gempa bumi, tsunami, banjir)</li>
+                        <li>Pandemi atau wabah penyakit</li>
+                        <li>Perang, kerusuhan, atau terorisme</li>
+                        <li>Pemogokan nasional atau lokal</li>
+                        <li>Kebijakan pemerintah yang membatasi operasi</li>
+                        <li>Gangguan teknis yang luas</li>
+                    </ul>
+                </div>
+                
+                <!-- Sengketa -->
+                <div class="content-card">
+                    <div class="section-number">12</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Penyelesaian Sengketa</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Semua sengketa yang timbul dari penggunaan layanan HENDRA CIA akan diselesaikan melalui:
+                    </p>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">🤝 Negosiasi</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Upaya pertama adalah melalui negosiasi baik antara Pengguna dan HENDRA CIA.
+                    </p>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">⚖️ Mediasi</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Jika negosiasi gagal, sengketa dapat diselesaikan melalui mediasi dengan mediator netral.
+                    </p>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-neon-blue">⚖️ Yurisdiksi</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Jika semua upaya penyelesaian gagal, sengketa akan diselesaikan melalui pengadilan di 
+                        <strong>Kota Pontianak, Provinsi Kalimantan Barat</strong>.
+                    </p>
+                </div>
+                
+                <!-- Perubahan Ketentuan -->
+                <div class="content-card">
+                    <div class="section-number">13</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Perubahan Ketentuan</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        HENDRA CIA berhak mengubah Syarat dan Ketentuan ini kapan saja. Perubahan akan diberitahukan kepada Pengguna melalui:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li>Email notifikasi</li>
+                        <li>Pemberitahuan di website</li>
+                        <li>Notifikasi push di aplikasi mobile</li>
+                        <li>WhatsApp notification</li>
+                    </ul>
+                    <p class="text-gray-300 mt-4 leading-relaxed">
+                        Pengguna dianggap menyetujui perubahan jika terus menggunakan layanan setelah pemberitahuan.
+                    </p>
+                </div>
+                
+                <!-- Kontak -->
+                <div class="content-card">
+                    <div class="section-number">14</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-accent-gold">Hubungi Kami</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Jika Anda memiliki pertanyaan tentang Syarat dan Ketentuan ini, silakan hubungi kami:
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-lg text-neon-blue mb-2">📧 Email</h4>
+                            <p class="text-gray-300">legal@hendracia.com</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-neon-blue mb-2">📞 Telepon</h4>
+                            <p class="text-gray-300">085285703497</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-neon-blue mb-2">📍 Alamat</h4>
+                            <p class="text-gray-300">JL. SEI RAYA DALAM KOMP. PONDOK AGUNG UTAMA NO.9<br>Desa/Kelurahan Bangka Belitung Darat<br>Kec. Pontianak Tenggara, Kota Pontianak<br>Provinsi Kalimantan Barat</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-neon-blue mb-2">💬 Live Chat</h4>
+                            <p class="text-gray-300">Tersedia 24/7 di website kami</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Last Updated -->
+                <div class="text-center py-8">
+                    <p class="text-gray-400">
+                        Syarat dan Ketentuan ini terakhir diperbarui pada: <span class="text-accent-gold font-semibold">15 Desember 2024</span>
+                    </p>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Versi 3.0 - Efektif sejak tanggal publikasi
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <div class="w-10 h-10 bg-gradient-to-br from-neon-blue to-neon-purple rounded-xl flex items-center justify-center">
+                        <span class="brand-font text-white text-lg">HC</span>
+                    </div>
+                    <div>
+                        <h3 class="brand-font text-xl font-bold text-gradient">HENDRA CIA</h3>
+                        <p class="text-xs text-gray-500 uppercase tracking-widest">Creative Solutions</p>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    Solusi premium untuk akomodasi dan layanan kreatif di Pontianak.
+                </p>
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="index.html" class="text-gray-400 hover:text-neon-blue transition">Beranda</a>
+                    <a href="index.html#services" class="text-gray-400 hover:text-neon-blue transition">Layanan</a>
+                    <a href="index.html#creative" class="text-gray-400 hover:text-neon-blue transition">Kreatif</a>
+                    <a href="index.html#about" class="text-gray-400 hover:text-neon-blue transition">Tentang</a>
+                    <a href="index.html#contact" class="text-gray-400 hover:text-neon-blue transition">Kontak</a>
+                    <a href="privacy.html" class="text-gray-400 hover:text-neon-blue transition">Kebijakan Privasi</a>
+                </div>
+                <div class="border-t border-gray-800 pt-6">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2024 <span class="text-gradient font-bold">HENDRA CIA</span>. All rights reserved. | Crafted with 💜 and creativity
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+        
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

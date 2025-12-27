@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - HENDRA CIA</title>
+    <meta name="description" content="Kebijakan Privasi HENDRA CIA - Creative Accommodation & Advertising Solutions">
+    <meta name="keywords" content="kebijakan privasi, HENDRA CIA, akomodasi, privasi data, creative solutions">
+    <meta name="author" content="HENDRA CIA">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --neon-blue: #00d4ff;
+            --neon-purple: #7c3aed;
+            --neon-pink: #ec4899;
+            --dark-bg: #0f0f23;
+            --light-bg: #1a1a2e;
+            --accent-gold: #fbbf24;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-primary);
+            background: var(--dark-bg);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        .brand-font {
+            font-family: 'Bebas Neue', cursive;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--light-bg) 0%, var(--dark-bg) 50%, #16213e 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple), var(--neon-pink), var(--accent-gold));
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientText 3s ease infinite;
+        }
+        
+        @keyframes gradientText {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .nav-sticky {
+            backdrop-filter: blur(20px);
+            background: rgba(15, 15, 35, 0.95);
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+            color: white;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--neon-purple), var(--neon-pink));
+            transition: left 0.5s ease;
+            z-index: -1;
+        }
+        
+        .btn-primary:hover::before {
+            left: 0;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 212, 255, 0.4);
+        }
+        
+        .content-card {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(0, 212, 255, 0.1));
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .content-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(0, 212, 255, 0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+            opacity: 0;
+        }
+        
+        .content-card:hover::before {
+            opacity: 1;
+            animation: shimmer 1s ease-in-out;
+        }
+        
+        .content-card:hover {
+            border-color: var(--neon-blue);
+            transform: translateY(-5px);
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(251, 191, 36, 0.2));
+            border: 1px solid var(--accent-gold);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 16px 0;
+            position: relative;
+        }
+        
+        .warning-box::before {
+            content: '⚠️';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: var(--dark-bg);
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 212, 255, 0.2));
+            border: 1px solid var(--neon-blue);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 16px 0;
+            position: relative;
+        }
+        
+        .info-box::before {
+            content: 'ℹ️';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: var(--dark-bg);
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .section-number {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body class="gradient-bg">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 nav-sticky">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-br from-neon-blue to-neon-purple rounded-xl flex items-center justify-center">
+                        <span class="brand-font text-white text-xl">HC</span>
+                    </div>
+                    <div>
+                        <h1 class="brand-font text-2xl font-bold text-gradient">HENDRA CIA</h1>
+                        <p class="text-xs text-secondary uppercase tracking-widest">Creative Solutions</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-neon-blue transition duration-300">Beranda</a>
+                    <a href="index.html#services" class="text-gray-300 hover:text-neon-blue transition duration-300">Layanan</a>
+                    <a href="index.html#creative" class="text-gray-300 hover:text-neon-blue transition duration-300">Kreatif</a>
+                    <a href="index.html#about" class="text-gray-300 hover:text-neon-blue transition duration-300">Tentang</a>
+                    <a href="index.html#contact" class="text-gray-300 hover:text-neon-blue transition duration-300">Kontak</a>
+                    <span class="text-neon-blue font-semibold">Kebijakan Privasi</span>
+                    <a href="terms.html" class="text-gray-300 hover:text-neon-blue transition duration-300">Syarat & Ketentuan</a>
+                </div>
+                
+                <button class="md:hidden" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-dark-bg border-t border-gray-800">
+            <div class="container mx-auto px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-gray-300 hover:text-neon-blue transition">Beranda</a>
+                <a href="index.html#services" class="block text-gray-300 hover:text-neon-blue transition">Layanan</a>
+                <a href="index.html#creative" class="block text-gray-300 hover:text-neon-blue transition">Kreatif</a>
+                <a href="index.html#about" class="block text-gray-300 hover:text-neon-blue transition">Tentang</a>
+                <a href="index.html#contact" class="block text-gray-300 hover:text-neon-blue transition">Kontak</a>
+                <span class="block text-neon-blue font-semibold">Kebijakan Privasi</span>
+                <a href="terms.html" class="block text-gray-300 hover:text-neon-blue transition">Syarat & Ketentuan</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-blue-900/20 to-purple-900/20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="heading-font text-5xl md:text-6xl font-bold mb-6">
+                    Kebijakan Privasi <span class="text-gradient">HENDRA CIA</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    Kami berkomitmen untuk melindungi privasi dan data pribadi Anda. 
+                    Kebijakan ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi Anda.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="index.html#contact" class="btn-primary text-center">Hubungi Kami</a>
+                    <a href="terms.html" class="bg-gray-700 text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-600 transition text-center">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Content Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                
+                <!-- Pendahuluan -->
+                <div class="content-card">
+                    <div class="section-number">01</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-neon-blue">Pendahuluan</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Selamat datang di <span class="text-gradient font-bold">HENDRA CIA</span>. Kami sangat menghargai privasi Anda dan berkomitmen untuk melindungi data pribadi yang Anda berikan kepada kami. 
+                        Kebijakan Privasi ini berlaku untuk semua layanan yang disediakan oleh HENDRA CIA, termasuk namun tidak terbatas pada:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li>Website resmi HENDRA CIA (www.hendracia.com)</li>
+                        <li>Layanan pemesanan akomodasi online</li>
+                        <li>Komunikasi melalui email, telepon, atau media sosial</li>
+                        <li>Layanan pelanggan dan dukungan teknis</li>
+                        <li>Layanan creative advertising dan branding</li>
+                    </ul>
+                </div>
+                
+                <!-- Data yang Kami Kumpulkan -->
+                <div class="content-card">
+                    <div class="section-number">02</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-neon-blue">Data yang Kami Kumpulkan</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Kami dapat mengumpulkan berbagai jenis data pribadi Anda, termasuk:
+                    </p>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-accent-gold">📋 Data Identifikasi Pribadi</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4 mb-6">
+                        <li>Nama lengkap</li>
+                        <li>Alamat email</li>
+                        <li>Nomor telepon</li>
+                        <li>Alamat lengkap</li>
+                        <li>Tanggal lahir</li>
+                        <li>Nomor identitas (KTP/Paspor)</li>
+                    </ul>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-accent-gold">🏨 Data Pemesanan</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4 mb-6">
+                        <li>Detail pemesanan akomodasi</li>
+                        <li>Tanggal check-in dan check-out</li>
+                        <li>Preferensi kamar atau layanan</li>
+                        <li>Riwayat pemesanan sebelumnya</li>
+                        <li>Special requests dan preferences</li>
+                    </ul>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-accent-gold">💳 Data Pembayaran</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4 mb-6">
+                        <li>Informasi kartu kredit/debit (dienkripsi)</li>
+                        <li>Detail rekening bank</li>
+                        <li>Riwayat transaksi</li>
+                        <li>Payment preferences</li>
+                    </ul>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-accent-gold">🌐 Data Teknis</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li>Alamat IP</li>
+                        <li>Jenis browser dan perangkat</li>
+                        <li>Data lokasi (jika diizinkan)</li>
+                        <li>Cookies dan data pelacakan</li>
+                        <li>Interaction patterns dengan website</li>
+                    </ul>
+                </div>
+                
+                <!-- Penggunaan Data -->
+                <div class="content-card">
+                    <div class="section-number">03</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-neon-blue">Penggunaan Data Pribadi</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Kami menggunakan data pribadi Anda untuk:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li><strong>🏨 Menyediakan Layanan:</strong> Memproses pemesanan dan menyediakan akomodasi yang Anda pesan</li>
+                        <li><strong>📧 Komunikasi:</strong> Menghubungi Anda terkait pemesanan, konfirmasi, dan informasi penting</li>
+                        <li><strong>📈 Peningkatan Layanan:</strong> Menganalisis data untuk meningkatkan kualitas layanan kami</li>
+                        <li><strong>🔒 Keamanan:</strong> Memastikan keamanan dan mencegah penipuan</li>
+                        <li><strong>🎯 Marketing:</strong> Mengirimkan informasi promosi (dengan persetujuan Anda)</li>
+                        <li><strong>⚖️ Kepatuhan Hukum:</strong> Memenuhi kewajiban hukum dan peraturan yang berlaku</li>
+                        <li><strong>🎨 Creative Services:</strong> Mengembangkan solusi kreatif yang disesuaikan dengan kebutuhan Anda</li>
+                    </ul>
+                </div>
+                
+                <!-- Berbagi Data -->
+                <div class="content-card">
+                    <div class="section-number">04</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-neon-blue">Berbagi Data Pihak Ketiga</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Kami tidak menjual, menyewakan, atau membagikan data pribadi Anda kepada pihak ketiga tanpa persetujuan Anda, kecuali dalam situasi berikut:
+                    </p>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-accent-gold">🤝 Penyedia Layanan</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Kami dapat berbagi data dengan penyedia layanan tepercaya yang membantu operasional kami:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4 mb-6">
+                        <li>Payment gateway untuk pemrosesan pembayaran</li>
+                        <li>Platform booking online</li>
+                        <li>Layanan email dan SMS</li>
+                        <li>Analytics dan monitoring tools</li>
+                        <li>Creative agencies dan design partners</li>
+                    </ul>
+                    
+                    <h3 class="font-semibold text-xl mb-3 text-accent-gold">⚖️ Kewajiban Hukum</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Kami dapat mengungkapkan data Anda jika diwajibkan oleh hukum, perintah pengadilan, atau permintaan dari pihak berwenang.
+                    </p>
+                </div>
+                
+                <!-- Keamanan Data -->
+                <div class="content-card">
+                    <div class="section-number">05</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-neon-blue">Keamanan Data</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Kami mengimplementasikan berbagai langkah keamanan untuk melindungi data pribadi Anda:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li><strong>🔐 Enkripsi:</strong> Data sensitif dienkripsi menggunakan teknologi SSL/TLS</li>
+                        <li><strong>🔑 Access Control:</strong> Akses data terbatas untuk personel yang berwenang</li>
+                        <li><strong>🔄 Regular Updates:</strong> Sistem keamanan kami diperbarui secara berkala</li>
+                        <li><strong>👁️ Monitoring:</strong> Aktivitas mencurigakan dipantau 24/7</li>
+                        <li><strong>💾 Backup:</strong> Data di-backup secara regular untuk mencegah kehilangan</li>
+                        <li><strong>🛡️ Firewall:</strong> Perlindungan network tingkat enterprise</li>
+                    </ul>
+                </div>
+                
+                <!-- Hak Pengguna -->
+                <div class="content-card">
+                    <div class="section-number">06</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-neon-blue">Hak Anda sebagai Pengguna</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Sebagai pemilik data, Anda memiliki hak-hak berikut:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li><strong>🔍 Hak Akses:</strong> Meminta salinan data pribadi yang kami simpan</li>
+                        <li><strong>✏️ Hak Koreksi:</strong> Memperbaiki data yang tidak akurat atau tidak lengkap</li>
+                        <li><strong>🗑️ Hak Penghapusan:</strong> Meminta penghapusan data pribadi dalam kondisi tertentu</li>
+                        <li><strong>⏸️ Hak Pembatasan:</strong> Membatasi pemrosesan data Anda</li>
+                        <li><strong>📤 Hak Portabilitas:</strong> Memindahkan data Anda ke layanan lain</li>
+                        <li><strong>❌ Hak Penolakan:</strong> Menolak pemrosesan data untuk tujuan marketing</li>
+                    </ul>
+                </div>
+                
+                <!-- Cookies -->
+                <div class="content-card">
+                    <div class="section-number">07</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-neon-blue">Kebijakan Cookies</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Website kami menggunakan cookies untuk meningkatkan pengalaman pengguna:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li><strong>🍪 Cookies Esensial:</strong> Diperlukan untuk fungsi dasar website</li>
+                        <li><strong>📊 Cookies Performa:</strong> Mengumpulkan data tentang penggunaan website</li>
+                        <li><strong>⚙️ Cookies Fungsional:</strong> Mengingat preferensi Anda</li>
+                        <li><strong>📱 Cookies Marketing:</strong> Menampilkan iklan yang relevan</li>
+                        <li><strong>🎯 Cookies Personalisasi:</strong> Menyesuaikan konten dengan preferensi Anda</li>
+                    </ul>
+                    <p class="text-gray-300 mt-4 leading-relaxed">
+                        Anda dapat mengelola preferensi cookies melalui pengaturan browser Anda.
+                    </p>
+                </div>
+                
+                <!-- Data Retention -->
+                <div class="content-card">
+                    <div class="section-number">08</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-neon-blue">Retensi Data</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Kami menyimpan data pribadi Anda selama diperlukan untuk:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li>Memenuhi tujuan pengumpulan data</li>
+                        <li>Memenuhi kewajiban hukum dan peraturan</li>
+                        <li>Menyelesaikan perselisihan dan menegakkan perjanjian</li>
+                        <li>Melakukan analisis bisnis yang legitimate</li>
+                    </ul>
+                    <div class="info-box">
+                        <p class="text-gray-300">
+                            <strong>INFO:</strong> Data pemesanan biasanya disimpan minimal 5 tahun untuk keperluan akuntansi dan kepatuhan pajak.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Children Privacy -->
+                <div class="content-card">
+                    <div class="section-number">09</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-neon-blue">Privasi Anak</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Layanan kami tidak ditujukan untuk anak-anak di bawah 18 tahun. 
+                        Kami tidak sengaja mengumpulkan data pribadi dari anak-anak. 
+                        Jika kami mengetahui bahwa kami telah mengumpulkan data pribadi dari anak di bawah 18 tahun, 
+                        kami akan mengambil langkah-langkah untuk menghapus informasi tersebut segera.
+                    </p>
+                    <div class="warning-box">
+                        <p class="text-gray-300">
+                            <strong>PENTING:</strong> Orang tua atau wali yang mengetahui anak mereka memberikan data pribadi kepada kami 
+                            harus segera menghubungi kami agar kami dapat menghapus informasi tersebut.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- International Data -->
+                <div class="content-card">
+                    <div class="section-number">10</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-neon-blue">Transfer Data Internasional</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Data pribadi Anda dapat ditransfer dan diproses di luar Indonesia jika:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li>Diperlukan untuk penyediaan layanan kepada Anda</li>
+                        <li>Anda telah memberikan persetujuan eksplisit</li>
+                        <li>Diizinkan oleh hukum yang berlaku</li>
+                        <li>Untuk keperluan backup dan keamanan data</li>
+                    </ul>
+                    <p class="text-gray-300 mt-4 leading-relaxed">
+                        Kami memastikan bahwa transfer data internasional dilakukan dengan perlindungan yang memadai sesuai standar internasional.
+                    </p>
+                </div>
+                
+                <!-- Changes to Policy -->
+                <div class="content-card">
+                    <div class="section-number">11</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-neon-blue">Perubahan Kebijakan</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu untuk mencerminkan:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                        <li>Perubahan dalam praktik data kami</li>
+                        <li>Pembaruan layanan yang kami tawarkan</li>
+                        <li>Perubahan dalam peraturan yang berlaku</li>
+                        <li>Umpan balik dari pengguna</li>
+                    </ul>
+                    <p class="text-gray-300 mt-4 leading-relaxed">
+                        Setiap perubahan signifikan akan diberitahukan kepada Anda melalui email atau pemberitahuan di website kami.
+                    </p>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="content-card">
+                    <div class="section-number">12</div>
+                    <h2 class="heading-font text-3xl font-bold mb-4 text-neon-blue">Hubungi Kami</h2>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Jika Anda memiliki pertanyaan, keluhan, atau permintaan terkait Kebijakan Privasi ini, 
+                        silakan hubungi kami melalui:
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-lg text-accent-gold mb-2">📧 Email</h4>
+                            <p class="text-gray-300">privacy@hendracia.com</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-accent-gold mb-2">📞 Telepon</h4>
+                            <p class="text-gray-300">085285703497</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-accent-gold mb-2">📍 Alamat</h4>
+                            <p class="text-gray-300">JL. SEI RAYA DALAM KOMP. PONDOK AGUNG UTAMA NO.9<br>Desa/Kelurahan Bangka Belitung Darat<br>Kec. Pontianak Tenggara, Kota Pontianak<br>Provinsi Kalimantan Barat</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg text-accent-gold mb-2">💬 Live Chat</h4>
+                            <p class="text-gray-300">Tersedia di website kami</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-gradient-to-r from-neon-blue/20 to-neon-purple/20 rounded-xl border border-neon-blue/30">
+                        <h4 class="font-semibold text-lg text-white mb-2">🕒 Waktu Respons</h4>
+                        <p class="text-gray-300">
+                            Kami akan merespons pertanyaan atau permintaan Anda dalam waktu maksimal 7 hari kerja. 
+                            Untuk permintaan darurat terkait keamanan data, kami akan merespons dalam 24 jam.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Last Updated -->
+                <div class="text-center py-8">
+                    <p class="text-gray-400">
+                        Kebijakan Privasi ini terakhir diperbarui pada: <span class="text-neon-blue font-semibold">15 Desember 2024</span>
+                    </p>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Versi 2.0 - Efektif sejak tanggal publikasi
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <div class="w-10 h-10 bg-gradient-to-br from-neon-blue to-neon-purple rounded-xl flex items-center justify-center">
+                        <span class="brand-font text-white text-lg">HC</span>
+                    </div>
+                    <div>
+                        <h3 class="brand-font text-xl font-bold text-gradient">HENDRA CIA</h3>
+                        <p class="text-xs text-gray-500 uppercase tracking-widest">Creative Solutions</p>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    Solusi premium untuk akomodasi dan layanan kreatif di Pontianak.
+                </p>
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="index.html" class="text-gray-400 hover:text-neon-blue transition">Beranda</a>
+                    <a href="index.html#services" class="text-gray-400 hover:text-neon-blue transition">Layanan</a>
+                    <a href="index.html#creative" class="text-gray-400 hover:text-neon-blue transition">Kreatif</a>
+                    <a href="index.html#about" class="text-gray-400 hover:text-neon-blue transition">Tentang</a>
+                    <a href="index.html#contact" class="text-gray-400 hover:text-neon-blue transition">Kontak</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-neon-blue transition">Syarat & Ketentuan</a>
+                </div>
+                <div class="border-t border-gray-800 pt-6">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2024 <span class="text-gradient font-bold">HENDRA CIA</span>. All rights reserved. | Crafted with 💜 and creativity
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+        
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
